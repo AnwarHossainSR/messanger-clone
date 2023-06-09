@@ -1,3 +1,4 @@
+import type { Conversation, Message, User } from '@prisma/client';
 import type { NextPage } from 'next';
 import type { AppProps } from 'next/app';
 import type { ReactNode } from 'react';
@@ -14,21 +15,12 @@ export type ChildrenProps = {
   children: ReactNode;
 };
 
-export type IToken = {
-  accessToken: string;
-  refreshToken?: string;
+export type FullMessageType = Message & {
+  sender: User;
+  seen: User[];
 };
 
-export interface CurrentUserProps {
-  currentUser?: {
-    createdAt: string;
-    updatedAt: string;
-    emailVerified: string | null;
-    id: string;
-    name: string | null;
-    email: string | null;
-    image: string | null;
-    password: string | null;
-    isAdmin: boolean;
-  } | null;
-}
+export type FullConversationType = Conversation & {
+  users: User[];
+  messages: FullMessageType[];
+};
