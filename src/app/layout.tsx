@@ -1,7 +1,6 @@
 import '@/styles/globals.css';
 
-import { Inter } from 'next/font/google';
-
+import ActiveStatus from '@/components/ActiveStatus';
 import AuthContext from '@/context/AuthContext';
 import ToasterContext from '@/context/ToasterContext';
 import type { ChildrenProps } from '@/types';
@@ -14,19 +13,13 @@ import type { ChildrenProps } from '@/types';
 //   title: 'Next Starter',
 // };
 
-const inter = Inter({
-  subsets: ['latin'],
-  variable: '--font-inter',
-  display: 'optional',
-});
-
 export default async function RootLayout({ children }: ChildrenProps) {
   return (
     <html lang="en">
-      <body className={`${inter.className}`}>
+      <body>
         <AuthContext>
           <ToasterContext />
-          {/* <ActiveStatus /> */}
+          <ActiveStatus />
           {children}
         </AuthContext>
       </body>

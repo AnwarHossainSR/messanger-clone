@@ -1,5 +1,26 @@
-const layout = () => {
-  return <div>layout</div>;
-};
+import getConversations from '@/actions/getConversations';
+import getUsers from '@/actions/getUsers';
+import ConversationList from '@/components/Conversations/ConversationList';
+import Sidebar from '@/components/Sidebar/Sidebar';
 
-export default layout;
+export default async function ConversationsLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
+  const conversations = await getConversations();
+  const users = await getUsers();
+
+  return (
+    <Sidebar>
+      <div className="h-full">
+        <ConversationList
+          users={users}
+          title="Messages"
+          initialItems={conversations}
+        />
+        {children}
+      </div>
+    </Sidebar>
+  );
+}

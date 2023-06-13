@@ -67,6 +67,7 @@
     "@types/bcrypt": "^5.0.0",
     "@types/cookie": "^0.5.1",
     "@types/jsonwebtoken": "^9.0.2",
+    "@types/lodash": "^4.14.195",
     "@types/mongoose": "^5.11.97",
     "@types/node": "^20.2.5",
     "@types/react": "^18.2.8",
