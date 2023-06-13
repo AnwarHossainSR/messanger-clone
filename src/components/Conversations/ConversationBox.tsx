@@ -74,12 +74,12 @@ const ConversationBox: React.FC<ConversationBoxProps> = ({
       onClick={handleClick}
       className={clsx(
         `
-        w-full 
-        relative 
-        flex 
-        items-center 
-        space-x-3 
-        p-3 
+        w-full
+        relative
+        flex
+        items-center
+        space-x-3
+        p-3
         hover:bg-neutral-100
         rounded-lg
         transition
@@ -103,8 +103,8 @@ const ConversationBox: React.FC<ConversationBoxProps> = ({
             {lastMessage?.createdAt && (
               <p
                 className="
-                  text-xs 
-                  text-gray-400 
+                  text-xs
+                  text-gray-400
                   font-light
                 "
               >
@@ -115,7 +115,7 @@ const ConversationBox: React.FC<ConversationBoxProps> = ({
           <p
             className={clsx(
               `
-              truncate 
+              truncate
               text-sm
               `,
               hasSeen ? 'text-gray-500' : 'text-black font-medium'

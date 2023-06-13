@@ -23,8 +23,8 @@ const AvatarGroup: React.FC<AvatarGroupProps> = ({ users = [] }) => {
           key={user.id}
           className={`
             absolute
-            inline-block 
-            rounded-full 
+            inline-block
+            rounded-full
             overflow-hidden
             h-[21px]
             w-[21px]
