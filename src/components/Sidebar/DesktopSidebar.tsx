@@ -22,9 +22,6 @@ const DesktopSidebar: React.FC<DesktopSidebarProps> = ({ currentUser }) => {
   const routes = useRoutes();
   const [isOpen, setIsOpen] = useState(false);
 
-  // eslint-disable-next-line no-console
-  console.log({ currentUser }, 'TEST');
-
   return (
     <>
       <SettingsModal
