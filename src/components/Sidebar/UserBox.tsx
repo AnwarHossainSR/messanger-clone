@@ -33,13 +33,13 @@ const UserBox: React.FC<UserBoxProps> = ({ data }) => {
       <div
         onClick={handleClick}
         className="
-          w-full 
-          relative 
-          flex 
-          items-center 
-          space-x-3 
-          bg-white 
-          p-3 
+          w-full
+          relative
+          flex
+          items-center
+          space-x-3
+          bg-white
+          p-3
           hover:bg-neutral-100
           rounded-lg
           transition

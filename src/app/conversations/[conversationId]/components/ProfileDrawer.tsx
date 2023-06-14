@@ -133,10 +133,10 @@ const ProfileDrawer: React.FC<ProfileDrawerProps> = ({
                                 <div>
                                   <dt
                                     className="
-                                  text-sm 
-                                  font-medium 
-                                  text-gray-500 
-                                  sm:w-40 
+                                  text-sm
+                                  font-medium
+                                  text-gray-500
+                                  sm:w-40
                                   sm:flex-shrink-0
                                 "
                                   >
@@ -144,9 +144,9 @@ const ProfileDrawer: React.FC<ProfileDrawerProps> = ({
                                   </dt>
                                   <dd
                                     className="
-                                  mt-1 
-                                  text-sm 
-                                  text-gray-900 
+                                  mt-1
+                                  text-sm
+                                  text-gray-900
                                   sm:col-span-2
                                 "
                                   >
@@ -160,10 +160,10 @@ const ProfileDrawer: React.FC<ProfileDrawerProps> = ({
                                 <div>
                                   <dt
                                     className="
-                                  text-sm 
-                                  font-medium 
-                                  text-gray-500 
-                                  sm:w-40 
+                                  text-sm
+                                  font-medium
+                                  text-gray-500
+                                  sm:w-40
                                   sm:flex-shrink-0
                                 "
                                   >
@@ -171,9 +171,9 @@ const ProfileDrawer: React.FC<ProfileDrawerProps> = ({
                                   </dt>
                                   <dd
                                     className="
-                                  mt-1 
-                                  text-sm 
-                                  text-gray-900 
+                                  mt-1
+                                  text-sm
+                                  text-gray-900
                                   sm:col-span-2
                                 "
                                   >
@@ -187,10 +187,10 @@ const ProfileDrawer: React.FC<ProfileDrawerProps> = ({
                                   <div>
                                     <dt
                                       className="
-                                    text-sm 
-                                    font-medium 
-                                    text-gray-500 
-                                    sm:w-40 
+                                    text-sm
+                                    font-medium
+                                    text-gray-500
+                                    sm:w-40
                                     sm:flex-shrink-0
                                   "
                                     >
@@ -198,9 +198,9 @@ const ProfileDrawer: React.FC<ProfileDrawerProps> = ({
                                     </dt>
                                     <dd
                                       className="
-                                    mt-1 
-                                    text-sm 
-                                    text-gray-900 
+                                    mt-1
+                                    text-sm
+                                    text-gray-900
                                     sm:col-span-2
                                   "
                                     >

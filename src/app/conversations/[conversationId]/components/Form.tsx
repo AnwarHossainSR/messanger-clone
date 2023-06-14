@@ -42,14 +42,14 @@ const Form = () => {
   return (
     <div
       className="
-        py-4 
-        px-4 
-        bg-white 
-        border-t 
-        flex 
-        items-center 
-        gap-2 
-        lg:gap-4 
+        py-4
+        px-4
+        bg-white
+        border-t
+        flex
+        items-center
+        gap-2
+        lg:gap-4
         w-full
       "
     >
@@ -74,11 +74,11 @@ const Form = () => {
         <button
           type="submit"
           className="
-            rounded-full 
-            p-2 
-            bg-sky-500 
-            cursor-pointer 
-            hover:bg-sky-600 
+            rounded-full
+            p-2
+            bg-sky-500
+            cursor-pointer
+            hover:bg-sky-600
             transition
           "
         >
