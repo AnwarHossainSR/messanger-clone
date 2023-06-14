@@ -6,14 +6,11 @@ import getCurrentUser from '@/actions/getCurrentUser';
 import prisma from '@/libs/prismaDB';
 import { pusherServer } from '@/libs/pusher';
 
-interface IParams {
-  conversationId?: string;
-}
-
-export async function POST(request: Request, { params }: { params: IParams }) {
+export async function POST(request: Request) {
   try {
+    const response = await request.json();
     const currentUser = await getCurrentUser();
-    const { conversationId } = params;
+    const { conversationId } = response;
 
     if (!currentUser?.id || !currentUser?.email) {
       return new NextResponse('Unauthorized', { status: 401 });

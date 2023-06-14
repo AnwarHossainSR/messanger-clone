@@ -28,9 +28,6 @@ const SettingsModal: React.FC<SettingsModalProps> = ({
   const router = useRouter();
   const [isLoading, setIsLoading] = useState(false);
 
-  // eslint-disable-next-line no-console
-  console.log(currentUser, '&TEST_CURRENT_USER');
-
   const {
     register,
     handleSubmit,
